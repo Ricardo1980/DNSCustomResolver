@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C963EA120C94B24000C9A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C963EA020C94B24000C9A92 /* AppDelegate.swift */; };
+		8C963EA320C94B24000C9A92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C963EA220C94B24000C9A92 /* ViewController.swift */; };
+		8C963EA620C94B24000C9A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C963EA420C94B24000C9A92 /* Main.storyboard */; };
+		8C963EA820C94B28000C9A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C963EA720C94B28000C9A92 /* Assets.xcassets */; };
+		8C963EAB20C94B28000C9A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C963EA920C94B28000C9A92 /* LaunchScreen.storyboard */; };
+		8C963EBD20C94CAB000C9A92 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C963EBC20C94CAB000C9A92 /* PacketTunnelProvider.swift */; };
+		8C963EC220C94CAB000C9A92 /* DNSCustomReponderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C963EBA20C94CAA000C9A92 /* DNSCustomReponderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C963EC920C94D0A000C9A92 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C963EC820C94D0A000C9A92 /* NetworkExtension.framework */; };
+		8C963ECA20CAE90E000C9A92 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C963EC820C94D0A000C9A92 /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C963EC020C94CAB000C9A92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C963E9520C94B24000C9A92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C963EB920C94CAA000C9A92;
+			remoteInfo = DNSCustomReponderExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C963EC620C94CAB000C9A92 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8C963EC220C94CAB000C9A92 /* DNSCustomReponderExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C963E9D20C94B24000C9A92 /* DNSCustomReponder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNSCustomReponder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C963EA020C94B24000C9A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C963EA220C94B24000C9A92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C963EA520C94B24000C9A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C963EA720C94B28000C9A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C963EAA20C94B28000C9A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C963EAC20C94B28000C9A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C963EB220C94B4C000C9A92 /* DNSCustomReponder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DNSCustomReponder.entitlements; sourceTree = "<group>"; };
+		8C963EBA20C94CAA000C9A92 /* DNSCustomReponderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DNSCustomReponderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C963EBC20C94CAB000C9A92 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		8C963EBE20C94CAB000C9A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C963EBF20C94CAB000C9A92 /* DNSCustomReponderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DNSCustomReponderExtension.entitlements; sourceTree = "<group>"; };
+		8C963EC820C94D0A000C9A92 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C963E9A20C94B24000C9A92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C963ECA20CAE90E000C9A92 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C963EB720C94CAA000C9A92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C963EC920C94D0A000C9A92 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C963E9420C94B24000C9A92 = {
+			isa = PBXGroup;
+			children = (
+				8C963E9F20C94B24000C9A92 /* DNSCustomReponder */,
+				8C963EBB20C94CAB000C9A92 /* DNSCustomReponderExtension */,
+				8C963E9E20C94B24000C9A92 /* Products */,
+				8C963EB320C94C74000C9A92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C963E9E20C94B24000C9A92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C963E9D20C94B24000C9A92 /* DNSCustomReponder.app */,
+				8C963EBA20C94CAA000C9A92 /* DNSCustomReponderExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C963E9F20C94B24000C9A92 /* DNSCustomReponder */ = {
+			isa = PBXGroup;
+			children = (
+				8C963EB220C94B4C000C9A92 /* DNSCustomReponder.entitlements */,
+				8C963EA020C94B24000C9A92 /* AppDelegate.swift */,
+				8C963EA220C94B24000C9A92 /* ViewController.swift */,
+				8C963EA420C94B24000C9A92 /* Main.storyboard */,
+				8C963EA720C94B28000C9A92 /* Assets.xcassets */,
+				8C963EA920C94B28000C9A92 /* LaunchScreen.storyboard */,
+				8C963EAC20C94B28000C9A92 /* Info.plist */,
+			);
+			path = DNSCustomReponder;
+			sourceTree = "<group>";
+		};
+		8C963EB320C94C74000C9A92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C963EC820C94D0A000C9A92 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C963EBB20C94CAB000C9A92 /* DNSCustomReponderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8C963EBC20C94CAB000C9A92 /* PacketTunnelProvider.swift */,
+				8C963EBE20C94CAB000C9A92 /* Info.plist */,
+				8C963EBF20C94CAB000C9A92 /* DNSCustomReponderExtension.entitlements */,
+			);
+			path = DNSCustomReponderExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C963E9C20C94B24000C9A92 /* DNSCustomReponder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C963EAF20C94B28000C9A92 /* Build configuration list for PBXNativeTarget "DNSCustomReponder" */;
+			buildPhases = (
+				8C963E9920C94B24000C9A92 /* Sources */,
+				8C963E9A20C94B24000C9A92 /* Frameworks */,
+				8C963E9B20C94B24000C9A92 /* Resources */,
+				8C963EC620C94CAB000C9A92 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C963EC120C94CAB000C9A92 /* PBXTargetDependency */,
+			);
+			name = DNSCustomReponder;
+			productName = DNSCustomReponder;
+			productReference = 8C963E9D20C94B24000C9A92 /* DNSCustomReponder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C963EB920C94CAA000C9A92 /* DNSCustomReponderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C963EC320C94CAB000C9A92 /* Build configuration list for PBXNativeTarget "DNSCustomReponderExtension" */;
+			buildPhases = (
+				8C963EB620C94CAA000C9A92 /* Sources */,
+				8C963EB720C94CAA000C9A92 /* Frameworks */,
+				8C963EB820C94CAA000C9A92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNSCustomReponderExtension;
+			productName = DNSCustomReponderExtension;
+			productReference = 8C963EBA20C94CAA000C9A92 /* DNSCustomReponderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C963E9520C94B24000C9A92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Ricardo;
+				TargetAttributes = {
+					8C963E9C20C94B24000C9A92 = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					8C963EB920C94CAA000C9A92 = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8C963E9820C94B24000C9A92 /* Build configuration list for PBXProject "DNSCustomReponder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C963E9420C94B24000C9A92;
+			productRefGroup = 8C963E9E20C94B24000C9A92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C963E9C20C94B24000C9A92 /* DNSCustomReponder */,
+				8C963EB920C94CAA000C9A92 /* DNSCustomReponderExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C963E9B20C94B24000C9A92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C963EAB20C94B28000C9A92 /* LaunchScreen.storyboard in Resources */,
+				8C963EA820C94B28000C9A92 /* Assets.xcassets in Resources */,
+				8C963EA620C94B24000C9A92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C963EB820C94CAA000C9A92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C963E9920C94B24000C9A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C963EA320C94B24000C9A92 /* ViewController.swift in Sources */,
+				8C963EA120C94B24000C9A92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C963EB620C94CAA000C9A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C963EBD20C94CAB000C9A92 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C963EC120C94CAB000C9A92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C963EB920C94CAA000C9A92 /* DNSCustomReponderExtension */;
+			targetProxy = 8C963EC020C94CAB000C9A92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C963EA420C94B24000C9A92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C963EA520C94B24000C9A92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C963EA920C94B28000C9A92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C963EAA20C94B28000C9A92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C963EAD20C94B28000C9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C963EAE20C94B28000C9A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C963EB020C94B28000C9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DNSCustomReponder/DNSCustomReponder.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4466M68F4Z;
+				INFOPLIST_FILE = DNSCustomReponder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardoruizlopez.tunnel.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b24558b7-ef2c-4e7e-befd-c502b7ed70d9";
+				PROVISIONING_PROFILE_SPECIFIER = "Tunnel App Dev";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8C963EB120C94B28000C9A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DNSCustomReponder/DNSCustomReponder.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4466M68F4Z;
+				INFOPLIST_FILE = DNSCustomReponder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardoruizlopez.tunnel.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b24558b7-ef2c-4e7e-befd-c502b7ed70d9";
+				PROVISIONING_PROFILE_SPECIFIER = "Tunnel App Dev";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8C963EC420C94CAB000C9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DNSCustomReponderExtension/DNSCustomReponderExtension.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4466M68F4Z;
+				INFOPLIST_FILE = DNSCustomReponderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardoruizlopez.tunnel.app.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "82c55b14-9d4a-4b80-884a-8730b3cee921";
+				PROVISIONING_PROFILE_SPECIFIER = "Tunnel Extension Dev";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C963EC520C94CAB000C9A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DNSCustomReponderExtension/DNSCustomReponderExtension.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4466M68F4Z;
+				INFOPLIST_FILE = DNSCustomReponderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardoruizlopez.tunnel.app.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "82c55b14-9d4a-4b80-884a-8730b3cee921";
+				PROVISIONING_PROFILE_SPECIFIER = "Tunnel Extension Dev";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C963E9820C94B24000C9A92 /* Build configuration list for PBXProject "DNSCustomReponder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C963EAD20C94B28000C9A92 /* Debug */,
+				8C963EAE20C94B28000C9A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C963EAF20C94B28000C9A92 /* Build configuration list for PBXNativeTarget "DNSCustomReponder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C963EB020C94B28000C9A92 /* Debug */,
+				8C963EB120C94B28000C9A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C963EC320C94CAB000C9A92 /* Build configuration list for PBXNativeTarget "DNSCustomReponderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C963EC420C94CAB000C9A92 /* Debug */,
+				8C963EC520C94CAB000C9A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C963E9520C94B24000C9A92 /* Project object */;
+}
