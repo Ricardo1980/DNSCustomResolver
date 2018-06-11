@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var statusLabel: UILabel!
     
-    let manager = NETunnelProviderManager.shared()
+    let manager = NETunnelProviderManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
